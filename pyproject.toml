@@ -1,0 +1,25 @@
+[project]
+name = "pavise"
+version = "0.1.0"
+description = "A dynamic SQLAlchemy query builder"
+authors = [
+    {name = "Adam Boretos"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "sqlalchemy (>=2.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+ruff = "^0.11.8"
+pre-commit = "^4.2.0"
+mypy = "^1.15.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
